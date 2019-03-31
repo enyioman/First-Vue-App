@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Vue App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .is-loading {
+        background: red;
+    }
+</style>
+<body>
+    <div id="root" class="container mt-5">
+
+        <progress-view inline-template>
+            <div>
+            <h5>Your status at the moment is {{ statusValue }}% </h5>
+
+            <p><button @click="statusValue += 4">Update Status</button></p>
+            </div>
+        </progress-view>
+
+        <!--<tabs>-->
+            <!--<tab name="About Us" :selected="true">-->
+                <!--<h6>Content of About US tab.</h6>-->
+            <!--</tab>-->
+
+            <!--<tab name="Our Services">-->
+                <!--<h6>Content of Our Services tab.</h6>-->
+            <!--</tab>-->
+
+            <!--<tab name="Contact Us">-->
+                <!--<h6>Content of Contact US tab.</h6>-->
+            <!--</tab>-->
+        <!--</tabs>-->
+
+
+
+        <card-message title="Quote" body="lorem ipsum dolor sit amet" footer="this is the footer" class="mt-3"></card-message>
+
+        <card-message title="MTV Base" body="End of year party" footer="this is the 2nd footer" class="mt-3"></card-message>
+
+        <card-message title="African Magic" body="The meaning of Love" footer="this is the 3rd footer" class="mt-3"></card-message>
+
+
+
+        <!--<task-list> </task-list>-->
+
+        <!--<input type="text" id="input" v-model="message">-->
+
+        <!--<p>My name is {{ message }}</p>-->
+
+        <!--<ul>-->
+            <!--<li v-for="name in names">{{ name }}</li>-->
+        <!--</ul>-->
+
+        <!--<input id="addname" type="text" v-model="newName" @keyup.enter="addName">-->
+
+        <!--<button @click="addName" v-bind:title="title">Add Name</button><br>-->
+
+        <!--<h1>{{ reversedMessage }}</h1>-->
+
+        <!--<button :class="{ 'is-loading' : isLoading }" @click="toggleClass">Click Me</button>-->
+
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+
+    <script src="main.js"></script>
+
+    <!--<script>-->
+
+
+       <!--var app = new Vue({-->
+
+
+           <!--el: '#root',-->
+
+           <!--data: {-->
+               <!--message: 'Enyioma Nwadibia',-->
+
+               <!--newName: '',-->
+
+               <!--names: ['Jane', 'Harry', 'David', 'Mary'],-->
+
+               <!--title: 'Added through Vue',-->
+
+               <!--isLoading: false-->
+           <!--},-->
+
+           <!--computed: {-->
+
+               <!--reversedMessage() {-->
+                  <!--return this.message.split('').reverse().join('');-->
+               <!--}-->
+           <!--},-->
+
+           <!--methods: {-->
+
+               <!--toggleClass() {-->
+
+                   <!--this.isLoading = true;-->
+               <!--},-->
+
+               <!--addName() {-->
+
+                   <!--this.names.push(this.newName);-->
+
+                   <!--this.newName = '';-->
+                <!--}-->
+            <!--}-->
+
+       <!--});-->
+
+
+
+    <!--</script>-->
+
+
+
+</body>
+</html>
